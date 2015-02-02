@@ -1,13 +1,26 @@
 $(function(){
 	/*efectos menu movil*/
-	$('#menu-movil').on("click",function(event){
-		$('.menu').removeClass('fadeOutLeft');
-		$('#menu-list').css('display','inline');
-		$('.menu').addClass('animated fadeInLeft');
-    });
-    $('#hidden-menu-movil').on("click",function(event){
-    	//$('html,body').animate({scrollTop: $("#inicio").offset().top},'slow');
-		$('.menu').removeClass('fadeInLeft');
-		$('.menu').addClass('animated fadeOutLeft');
+	
+	$('.show-menu').on("click",function(event){
+		$(this).toggleClass( "show-menu-on" );
+		$(".menu-principal").toggle(100);
+
 	});
+	$( window ).resize(function() {
+		if($(document).width()>767){
+			$(".menu-principal").removeAttr("style");
+			$('.show-menu').removeClass("show-menu-on");
+		}
+ 	 	
+	});
+
+	/*Menu flotante*/
+	$(window).bind('scroll',function(){
+		if($(window).scrollTop()>255){
+			$('.menu-principal').addClass("menu-flotante");
+		}else{
+			$('.menu-principal').removeClass("menu-flotante");
+		}
+	});
+
 });
