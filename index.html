@@ -11,34 +11,50 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic,900italic,900,300italic,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="css/owl.carousel.css">
+ 
 </head>
 <body>
 	<header class="header">
 		<div class="top_social">
 			<div class="container text-right ">
+				<div class="search-box">
+						<a href="#"class="search-top icon-lupa"></a>
+						<div id="show-search-box">
+							<span class="conito"></span>
+							<div class="search-content">
+								<form action="" type="get">
+									<input type="search" name="search" class="input-search" id="search-top" placeholder="&#59782; Para buscar, presione enter">	
+								</form>
+							</div>
+						</div>
+				</div>
 				<ul class="menu">
 					<li class="social-item">
-						<a href="#"class="icon-twitter"></a>
+						<a href="#"class="bg-twitter icon-twitter"></a>
 					</li>
 					<li class="social-item">
-						<a href="#"class="icon-facebook"></a>
+						<a href="#"class="bg-facebook icon-facebook"></a>
 					</li>
 					<li class="social-item">
-						<a href="#"class="icon-linkedin"></a>
+						<a href="#"class="bg-linkedin icon-linkedin"></a>
 					</li>
 					<li class="social-item">
-						<a href="#"class="icon-pinterest"></a>
+						<a href="#"class="bg-pinterest icon-pinterest"></a>
 					</li>
 					<li class="social-item">
-						<a href="#"class="icon-lupa"></a>
+						<a href="#"class="bg-rss icon-rss"></a>
 					</li>
 				</ul>
+				
+
 			</div>
 		</div>
 		<div id="header-wrap" class="container relative margin-v">
 			<a href="#" class="show-menu"></a>
 			<div class="anuncio-top desktop">
-				<img src="http://dummyimage.com/721x90/000/fff&text=ANUNCIO" alt="ANUNCIO 721 x 90">	
+				<img src="http://dummyimage.com/721x90/e84b6f/fff&text=Anuncio" alt="ANUNCIO 721 x 90">	
 			</div>
 			<div class="logo">
 				<h1><a href="#">
@@ -79,38 +95,49 @@
 
 		</div>
 	</header>
-	<div class="container tablet">
-		<div class="destacados-wraper">
-			<div class="principal-wrap">
-						<div class="post-destacado">
-							<a href="">
-								<img src="images/contents/recomedado_1.jpg" alt="">
-								<h2>Titulo de la entrad del post destacado</h2>
-							</a>
-						</div>
+	<div class="container tablet margin-v">
+		<div id="destacados-wraper" class="text-left margin-v">
+			<div id="content-owl">
+				<div id="owl-slider" class="owl-carousel owl-theme ">
+					<div class="item">
+						<a href="#">
+						<img src="images/contents/slider-1.jpg" alt="The Last of us">
+						<h2>Esto es un ejemplo del titulo </h2>
+						</a>
+					</div>
+					<div class="item">
+						<a href="">
+						<img src="images/contents/slider-2.jpg" alt="GTA V">
+						<h2>Velit nesciunt quibusdam eligendi. Odit itaque beatae sed debitis tempora?</h2>
+						</a>
+					</div>
+					<div class="item">
+						<a href="">
+						<img src="images/contents/slider-3.jpg" alt="Mirror Edge">
+						<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+						</a>
+					</div>
+				</div>
+				<span class="prev icon-izquierda slider-nav"></span>
+				<span class="next icon-derecha slider-nav"></span>
 			</div>
-			<div class="secun-wrap">
-					<div class="post-secun post-destacado">
-						<a href="">
-							<img src="images/contents/principal.jpg" alt="">
-							<h2>Titulo de la entrad del post destacado</h2>
-						</a>
-					</div>
-					<div class="post-secun post-destacado">
-						<a href="">
-							<img src="images/contents/principal.jpg" alt="">
-							<h2>Titulo de la entrad del post destacado</h2>
-						</a>
-					</div>
-					<div class="post-secun post-destacado">
-						<a href="">
-							<img src="images/contents/principal.jpg" alt="">
-							<h2>Titulo de la entrad del post destacado</h2>
-						</a>
-					</div>
+			<div id="sidebar-baner">
+				<div class="post-destacado">
+					<a href="#">
+						<img src="images/contents/recomedado_1.jpg" alt="">
+						<h2>Titulo de la entrad del post destacado</h2>
+					</a>
+				</div>
+				<div class="post-destacado">
+					<a href="#">
+						<img src="images/contents/recomedado_2.jpg" alt="">
+						<h2>Titulo de la entrad del post destacado</h2>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
+
 	<div id="container-post-home" class="container margin-v text-left">
 		
 		<div class="post_home">
@@ -231,5 +258,7 @@
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/main.js"></script>
+	<!-- Include js plugin -->
+	<script src="js/owl.carousel.min.js"></script>
 </body>
 </html>
